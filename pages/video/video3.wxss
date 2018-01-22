@@ -1,0 +1,33 @@
+/* pages/content/content.wxss */
+
+
+
+
+.title{
+  font-size:20px;
+  text-align: center;
+  padding:10rpx;
+  height:100rpx;
+  line-height: 100rpx;
+  border: 1px solid white;
+  border-radius:8px;
+  background-color: #F8F8F8;
+}
+ image{
+    position: absolute;
+   right:20rpx;
+   top:40rpx; 
+   width:50rpx;
+   height: 50rpx;
+   
+  
+   
+   
+ }
+  .nav{
+   position:relative;
+   margin-top:50rpx;
+
+
+ } 
+ 

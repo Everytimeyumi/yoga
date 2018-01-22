@@ -1,0 +1,104 @@
+<!--pages/shequzhongxin/shequzhongxin.wxml-->
+
+<view   class="flex-row top" style="display: flex;">
+<view class="top1">动态</view>
+<view class="top2"bindtap="toast">点击发表</view>
+</view>
+<view>
+<text class="iconfont icon-zan_weidian" style="font-size:50px;color:red"> </text>
+</view>
+
+
+<view  wx:for="{{array}}">
+<view  class="flex-row" style="display: flex;">
+<view class="padleft"> <image src="{{item.picurl}}"  class="profile"></image> </view>
+<view class="padrigth">
+<view>{{item.name}}</view>
+<view class="gray">{{item.times}}</view>
+</view>
+ <view class="button1"bindtap="change"data-text="{{item.userid}}">{{attention}}<view class='hid'>{{item.userid}}</view></view> 
+</view>
+
+<view class="zi">{{item.content}}</view>
+<view class="tianchong"></view>
+</view>
+
+ 
+<!-- <view  class="flex-row" style="display: flex;">
+<view class="padleft"> <image src="../imgs/4.jpg"  class="profile"></image> </view>
+<view class="padrigth">
+<view>无痕</view>
+<view class="gray">2017.12.05</view>
+</view>
+<view class="button1">{{attention}}</view>
+</view>
+
+<view class="zi">心不离道，不异与物</view>
+<view class="tianchong"></view>
+
+ 
+<view  class="flex-row" style="display: flex;">
+<view class="padleft"> <image src="../imgs/3.jpg"  class="profile"></image> </view>
+<view class="padrigth">
+<view>无痕</view>
+<view class="gray">2017.12.05</view>
+</view>
+<view class="button1">{{attention}}</view>
+</view>
+
+<view class="zi">心不离道，不异与物</view>
+<view class="tianchong"></view> 
+
+ 
+<view  class="flex-row" style="display: flex;">
+<view class="padleft"> <image src="../imgs/2.jpg"  class="profile"></image> </view>
+<view class="padrigth">
+<view>无痕</view>
+<view class="gray">2017.12.05</view>
+</view>
+<view class="button1">{{attention}}</view>
+</view>
+
+<view class="zi">心不离道，不异与物</view>
+<view class="tianchong"></view> 
+
+ <view  class="flex-row" style="display: flex;">
+<view class="padleft"> <image src="../imgs/3.jpg"  class="profile"></image> </view>
+<view class="padrigth">
+<view>无痕</view>
+<view class="gray">2017.12.05</view>
+</view>
+<view class="button1">{{attention}}</view>
+</view>
+
+<view class="zi">心不离道，不异与物</view>
+<view class="tianchong"></view> 
+
+<view  class="flex-row" style="display: flex;">
+<view class="padleft"> <image src="../imgs/4.jpg"  class="profile"></image> </view>
+<view class="padrigth">
+<view>无痕</view>
+<view class="gray">2017.12.05</view>
+</view>
+<view class="button1">{{attention}}</view>
+</view>
+
+<view class="zi">心不离道，不异与物</view>
+<view class="tianchong"></view>  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <view class="posi">
+<image src="../imgs/4.png"></image>
+<view>冥想</view>
+</view> -->

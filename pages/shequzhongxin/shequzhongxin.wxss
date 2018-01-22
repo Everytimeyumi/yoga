@@ -1,0 +1,88 @@
+/* pages/shequzhongxin/shequzhongxin.wxss */
+
+
+.top{
+  width: 100%;
+  border-bottom: 1px solid #efefef;
+}
+.top1{
+  width: 20%;
+  height: 40px;
+  margin-left: 15%;
+  line-height: 40px;
+  text-align: center;
+  border-bottom: 2px solid #179b76;
+  color:#179b76;
+}
+.top2{
+  width: 20%;
+  height: 40px;
+  margin-left: 30%;
+  line-height: 40px;
+  text-align: center;
+  color:#179b76;
+}
+.profile{
+  width: 80rpx;
+  height: 80rpx;
+  border: 0 solid #ff0000;
+  border-radius: 100rpx;
+}
+.padleft{
+  margin-left: 15px;
+  margin-top: 15px;
+  width: 10%;
+}
+.padrigth{
+  margin-left: 15px;
+  margin-top: 15px;
+  font-size: 14px;
+   width:50%;
+}
+.gray{
+  color: #989898;
+}
+.button1{
+  margin-top: 10px;
+  
+  height: 40px;
+  border-radius: 20px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #ffffff;
+  background-color: #cceca1;
+  color: #ee9f00;
+  width: 25%;
+}
+.hid{
+  display: none;
+}
+
+.zi{
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.tianchong{
+  width: 100%;
+  height: 5px;
+  background-color: #eef2f1;
+}
+.posi{
+  width: 50px;
+  text-align: center;
+  color: #989898;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+.posi image{
+  width: 50px;
+  height: 50px;
+}
+page{
+height: 100%;
+background-color: rgba(0,255,255,0.1);
+}

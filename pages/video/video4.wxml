@@ -1,0 +1,6 @@
+
+<view class="nav" wx:for="{{listen}}">
+   
+   <view class="title"  bindtap="tapName" id='{{item.mxid}}'> {{item.title}} <image src="/pages/imgs/right.png"></image></view>
+
+</view>

@@ -1,0 +1,74 @@
+.top{
+  background-color: #057567;
+}
+.flex-row{
+  width: 100%;
+  height: 100px;
+
+}
+.profile{
+  width: 100rpx;
+  height: 100rpx;
+  border: 0 solid #ff0000;
+  border-radius: 100rpx;
+  background-color: #f10b2e;
+  margin-top: -10px;
+  margin-left: 20px;
+}
+.top2,.top3{
+  width: 50%;
+}
+
+.top2 image,.top3 image{
+  width: 30px;
+  height: 20px;
+  margin-top: 20px;
+}
+.top2 image{
+  margin-left: 20px;
+}
+.top3 image{
+  margin-left: 70%;
+}
+.content1{
+  width: 100%;
+  height: 50px;
+  background-color: white;
+}
+.nicheng{
+  margin-left: 15px;
+  margin-top: 5px;
+}
+.san{
+  text-align: center;
+  width: 33%;
+}
+.xbt{
+  font-size: 14px;
+  color: #c3c3c3;
+}
+.si{
+ font-size: 14px;
+ color:  #057567;
+  text-align: center;
+   width: 25%;
+}
+
+.tiancheong{
+  width: 100%;
+  height: 10px;
+  background-color: #eff3f2;
+}
+
+.bottom1{
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+.biao{
+  color: #909090;
+ margin-left: 65%;
+ font-size: 30px;
+}

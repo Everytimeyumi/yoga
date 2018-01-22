@@ -1,0 +1,20 @@
+
+
+<view class=" tishi1 flex-row" style="display:flex;" wx:for="{{listen}}">
+<image bindtap="practice" id='{{item.tsid}}' src="{{'http://yoga.mqtp5.cn'+ item.imgs }}"></image>
+<view class="rig">
+<view class="pad" bindtap="practice" id='{{item.tsid}}'>{{item.title}}</view>
+<view class="gray">{{item.content}}</view>
+<view class="practice" bindtap="practice" id='{{item.tsid}}'>开始练习</view>
+</view>
+</view>
+
+
+
+
+
+
+
+
+
+

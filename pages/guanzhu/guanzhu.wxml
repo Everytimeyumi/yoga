@@ -1,0 +1,29 @@
+<view wx:for="{{list}}" wx:if="{{index<1}}">
+<view class="flex-row" style="display: flex;">
+<view class="padleft"> <image src="{{pictop}}" class="profile"></image> </view>
+<view class="padrigth">
+<view class='name'>{{item.name}}</view>
+
+</view>
+<view class="button1">个人中心</view>
+</view>
+
+
+<view class="tianchong"></view>
+</view> 
+
+<view wx:for="{{list}}">
+<view class="flex-row" >
+
+<view class="content">{{item.content}}</view>
+
+
+
+<view class="time"><text>{{item.dateandtime}}</text></view>
+</view>
+
+
+
+
+<view class="tianchong"></view>
+</view>

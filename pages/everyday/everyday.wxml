@@ -1,0 +1,11 @@
+
+
+<view class='page'wx:for="{{listen}}"> 
+ <view class="tit">{{item.title}}</view>
+  <view class="section tc">
+  
+  <video id="myVideo" src="{{'http://yoga.mqtp5.cn'+ item.img}}"   enable-danmu danmu-btn controls></video>
+  
+</view>
+
+</view>

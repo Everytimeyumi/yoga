@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/test/test",
+    "pages/shequ/shequ",
+    "pages/shequzhongxin/shequzhongxin",
+    "pages/person/person",
+    "pages/guanzhu/guanzhu",
+    "pages/shequzhongxin/liuyan/liuyan",
+    "pages/audio/audio",
+    "pages/content/content",
+    "pages/classic/classic",
+    "pages/read/read",
+    "pages/video/video1",
+    "pages/video/video2",
+    "pages/video/video3",
+    "pages/video/video4",
+    "pages/imagine/imagine",
+    "pages/everyday/everyday",
+    "pages/fans/fans",
+    "pages/dongtai/dongtai"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "灵性瑜伽",
+    "navigationBarTextStyle":"black"
+  }
+}

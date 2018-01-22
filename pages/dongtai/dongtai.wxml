@@ -1,0 +1,8 @@
+<!--pages/dongtai/dongtai.wxml-->
+<view class="content" wx:for="{{dongtai}}">
+<view class='t'>
+<view><image src="{{item.picurl}}" ></image>  </view>
+<view class="tit">{{item.name}} </view>
+</view>
+</view>
+

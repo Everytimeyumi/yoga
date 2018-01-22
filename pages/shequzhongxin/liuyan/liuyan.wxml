@@ -1,0 +1,4 @@
+<view class="section">
+  <input placeholder="请输入留言.." bindinput ="liuyanInput"/>
+</view>
+<button bindtap="loginBtnClick">留言</button>

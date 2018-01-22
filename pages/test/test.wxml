@@ -1,0 +1,85 @@
+ <swiper indicator-dots="{{indicatorDots}}"  
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">  
+      <block wx:for="{{imgUrls}}">  
+        <swiper-item>  
+           <navigator url="{{item.link}}" hover-class="navigator-hover">  
+            <image src="https://www.mqvt1.cn{{item.imgpath}}" class="slide-image" width="355" height="150"/>  
+           </navigator>   
+        </swiper-item>  
+      </block>  
+</swiper>   
+ 
+<view class="kong">
+</view> 
+
+<view class="title" wx:for="{{Words1}}">
+{{item.title}}
+</view>
+<view class="content1"wx:for="{{Words1}}">
+{{item.content}}
+</view>
+
+<view class="title">老师团队</view>
+
+<view class="flex-row" style="display: flex;" class="pad">
+<view bindtap="selected"  class="{{selected?'red':'default'}}"wx="{{teacher1}}" class='top'>
+<image src="https://www.mqvt1.cn/{{teacher1.img}}" class="profile"></image>
+<view class="teach">{{teacher1.name}}</view>
+</view>
+  <view bindtap="selected1"  class="{{selected1?'red':'default'}}"wx="{{teacher2}}"class='top'>
+<image src="https://www.mqvt1.cn/{{teacher2.img}}"  class="profile"></image>
+<view class="teach">{{teacher2.name}}</view>
+</view>
+<view bindtap="selected2"  class="{{selected2?'red':'default'}}"wx="{{teacher3}}"class='top'>
+<image src="https://www.mqvt1.cn/{{teacher3.img}}"  class="profile"></image>
+<view class="teach">{{teacher3.name}}</view>
+</view>
+<view bindtap="selected3"  class="{{selected3?'red':'default'}}"wx="{{teacher4}}"class='top'>
+<image src="https://www.mqvt1.cn/{{teacher4.img}}"  class="profile"></image>
+<view class="teach">{{teacher4.name}}</view>
+</view> 
+<view bindtap="selected4"  class="{{selected3?'red':'default'}}"wx="{{teacher5}}"class='top'>
+<image src="https://www.mqvt1.cn/{{teacher5.img}}"  class="profile"></image>
+<view class="teach">{{teacher5.name}}</view>
+</view>  
+</view>
+
+<view    class="{{selected?'show':'hidden'}} pad1" wx="{{teacher1}}">
+  <text>{{teacher1.content}}</text>
+</view>
+
+<view    class="{{selected1?'show':'hidden'}} pad1"wx="{{teacher2}}" >
+ <text>{{teacher2.content}}</text>
+</view>
+
+<view    class="{{selected2?'show':'hidden'}} pad1"wx="{{teacher3}}" >
+  <text>{{teacher3.content}}</text>
+</view>
+
+<view    class="{{selected3?'show':'hidden'}} pad1"wx="{{teacher4}}"  >
+   <text>{{teacher4.content}}</text>
+</view>
+<view    class="{{selected4?'show':'hidden'}} pad1"wx="{{teacher5}}"  >
+   <text>{{teacher5.content}}</text>
+</view>
+
+<view class="title" wx:for="{{Words2}}">
+{{item.title}}
+</view>
+
+<view class="content1"wx:for="{{Words2}}">
+{{item.content}}
+</view>
+<view class="title"wx:for="{{Words3}}">
+{{item.title}}
+</view>
+
+<view class="content1"wx:for="{{Words3}}">
+{{item.content}}
+</view>
+
+
+
+<button class="but"bindtap="logina">报名参加课程</button>
+
+<view class="bot"></view>

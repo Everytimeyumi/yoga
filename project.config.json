@@ -1,0 +1,59 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.6.6",
+	"appid": "wxa05b3a659401abcb",
+	"projectname": "%E7%BB%88%E6%9E%81",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "开心",
+					"pathName": "pages/video/video2",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "开心",
+					"pathName": "pages/shequzhongxin/liuyan/liuyan",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "关注",
+					"pathName": "pages/person/person",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "bieadfa",
+					"pathName": "pages/dongtai/dongtai",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "11111 ",
+					"pathName": "pages/video/video1",
+					"query": ""
+				}
+			]
+		}
+	}
+}

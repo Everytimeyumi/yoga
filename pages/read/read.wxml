@@ -1,0 +1,11 @@
+<!--pages/read/read.wxml-->
+<view wx:for="{{listen}}">
+<view class='listing'>请大家开始聆听</view>
+<audio poster="{{poster}}" name="{{item.title}}" author="{{item.pid}}" src="{{'http://yoga.mqtp5.cn'+ item.img}}" id="myAudio" controls loop width="100%"></audio>
+
+
+  <view class="head">{{item.title}}</view>
+  <view class="content"><text>{{item.content}}</text></view>
+
+</view>
+

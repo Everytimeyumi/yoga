@@ -1,0 +1,58 @@
+
+<view  class=" top flex-row" style="display: flex;" >
+
+<!-- <view class="top2"><image src="../imgs/111111_06.png"></image> </view>
+<view class="top3"><image src="../imgs/111111_03.png"></image> </view> -->
+</view>
+
+
+<view class="content1 flex-row" style="display:flex">
+<view><image src="{{pictop}}" class="profile"></image>  </view>
+<view class="nicheng">{{name}}</view>
+</view>
+
+<view class="flex-row" style="display:flex;height: 60px;" >
+<view class="san" wx="{{naber}}">
+<navigator url="/pages/guanzhu/guanzhu" hover-class="navigator-hover" >{{naber.count}}</navigator>
+<view class="xbt">动态</view>
+</view>
+<view class="san"wx="{{guanzhu}}">
+<view ></view>
+<navigator url="/pages/dongtai/dongtai" hover-class="navigator-hover" >{{guanzhu.count}}</navigator> 
+<view class="xbt">关注</view>
+</view>
+<view class="san"wx="{{fans}}">
+
+<navigator url="/pages/fans/fans" hover-class="navigator-hover" >{{fans.count}}</navigator>
+<view class="xbt">粉丝</view>
+
+</view>
+</view>
+
+
+<!-- <view class=" flex-row" style="display:flex;height: 50px;">
+<view class="si">冥想：1</view>
+<view class="si">体式：0</view>
+<view class="si">经典：1</view>
+<view class="si">共度：2</view>
+</view> -->
+
+
+
+<view class="tiancheong"></view>
+ 
+
+
+
+
+
+
+<view class="bottom1 flex-row" style="display:flex;" bindtap="toast">
+<view>我的动态</view>
+<view class="biao"> {{char_lt}} </view>
+</view>
+
+<view class="bottom1 flex-row" style="display:flex;" bindtap="toast1">
+<view>我的关注</view>
+<view class="biao"> {{char_lt}} </view>
+</view>

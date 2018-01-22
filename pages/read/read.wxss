@@ -1,0 +1,36 @@
+/* pages/imagine/imagine.wxss */
+
+.listing{
+  text-align: center;
+  /* background-color: green; */
+  font-size: 20px;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.but{
+  width: 50%;
+  float: left;
+  background-color: #ddd;
+  color:#ddd;
+ 
+  
+}
+audio{
+  
+  width: 100%;
+}
+.head{
+  height: 300rpx;
+  line-height: 300rpx;
+  text-align: center;
+  /* color:blue; */
+  font-size: 22px;
+}
+.content{
+  margin-left:5px;
+}
+.content text{
+  font-size: 15px;
+  text-indent: 2px;
+ 
+}

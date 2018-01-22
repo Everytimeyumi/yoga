@@ -1,0 +1,45 @@
+
+.tishi{
+  color: #1f887a;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 15px;
+  border-bottom: 1px solid #bfbfbf;
+  margin-left: 20px;
+}
+.tishi1{
+ margin-left: 20px;
+  width: 100%;
+}
+
+.tishi1 image{
+  margin-top: 15px;
+  width: 600rpx;
+  height: 200rpx;
+}
+.rig{
+  width: 100%;
+  position: relative;
+ 
+}
+.pad{
+   
+  font-size: 15px;
+  margin-left: 80rpx;
+  margin-top:60rpx;
+}
+.gray{
+  margin-top: 5px;
+  font-size: 12px;
+  color: #787878;
+}
+.practice{
+  font-size:12px;
+  position: absolute;
+  right:80rpx;
+  bottom: 30rpx;
+  color: #f58d1a;
+ 
+}
+
+

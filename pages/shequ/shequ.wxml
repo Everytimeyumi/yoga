@@ -1,0 +1,183 @@
+
+
+<!--pages/shequ/shequ.wxml-->
+
+<view class="flex-row" style="display: flex;" class='top'>
+
+<view class="left" bindtap="toast">
+<view class="font18">点击进入</view>
+<view class="font22">动态</view>
+</view>
+
+<view class="center1" >
+
+<navigator url="/pages/test/test" hover-class="navigator-hover" ><view class="kefu">首页</view></navigator>
+</view>
+
+<view class="right" bindtap="toast1">
+<image src="{{pictop}}"  class="profile"></image>
+<view class="geren">个人中心</view>
+</view>
+
+</view>
+
+
+<view class="body">
+
+<view class="flex-row" style="display: flex;" >
+<view  class="{{selected?'red':'default'}}  renwu" bindtap="selected">今日任务</view>
+<view  class="{{selected1?'red':'default'}} renwu2" bindtap="selected1">更多任务</view>
+<view  class="{{selected2?'red':'default'}}  renwu2 renwu3" bindtap="selected2">灵性瑜伽</view>
+</view>
+
+
+
+
+<view class="{{selected?'show':'hidden'}}">
+<view class="bottom1">
+今日瑜伽任务
+</view>
+<view class="flex-row" style="display: flex;"class="list1" wx:for="{{list}}" wx:if="{{index<1}}">
+<view>
+  <navigator url="/pages/video/video{{item.typeId}}" hover-class="navigator-hover" >
+  <image src="{{'http://yoga.mqtp5.cn'+ item.img}}"></image>
+  </navigator> 
+</view>
+
+<view class="cen">
+<navigator url="/pages/video/video{{item.typeId}}" hover-class="navigator-hover" class="tit">{{item.typeName}}</navigator> 
+
+
+ <view class="fon16">冥想天数：{{item.typeId}}</view> 
+</view>
+<navigator url="/pages/video/video{{item.typeId}}" hover-class="navigator-hover" class="huang">开始练习</navigator>
+</view>
+</view>
+
+
+
+<view class="{{selected1?'show':'hidden'}}">
+
+
+<view class="bottom1">
+更多任务
+</view >
+<view class="flex-row" style="display: flex;"class="list1" wx:for="{{list}}" >
+<view>
+  <navigator url="/pages/video/video{{item.typeId}}" hover-class="navigator-hover" >
+  <image src="{{'http://yoga.mqtp5.cn'+ item.img}}"></image>
+  </navigator> 
+</view>
+<view class="cen">
+<navigator url="/pages/video/video{{item.typeId}}" hover-class="navigator-hover" class="tit">{{item.typeName}}</navigator> 
+
+
+<view class="fon16">冥想天数：{{item.typeId}}</view>
+</view>
+<navigator url="/pages/video/video{{item.typeId}}" hover-class="navigator-hover" class="huang">开始练习</navigator>
+</view>
+
+</view>
+
+
+
+<view class="{{selected2?'show':'hidden'}}">
+
+<view class="flex-row" style="display: flex;">
+<view class="line1">  </view>
+<view class="line2  {{tishi?'green':'default1'}}"  bindtap="tishi">体式</view>
+<view class="line1">  </view>
+<view class="line2  {{tishi1?'green':'default1'}}" bindtap="tishi1">介绍</view>
+<view class="line1">  </view>
+</view>
+
+<view class="{{tishi?'show':'hidden'}}">
+<view class="tishi">
+体式列表
+</view>
+
+
+
+
+<view class=" tishi11 flex-row" style="display:flex;" wx:for="{{listen}}">
+<image bindtap="practice" id='{{item.tsid}}' src="{{'http://yoga.mqtp5.cn'+ item.imgs}}" ></image>
+<view class="rigq">
+<view bindtap="practice" id='{{item.tsid}}' class="paad">{{item.title}}</view>
+<view class="gray">{{item.content}}</view>
+<view class="practice" bindtap="practice" id='{{item.tsid}}'>开始练习</view>
+</view>
+</view>
+
+</view>
+
+
+
+
+<view class="{{tishi1?'show':'hidden'}}">
+<view class="title"wx:for="{{Words1}}">
+{{item.title}}
+</view>
+<view class="content1"wx:for="{{Words1}}">
+{{item.content}}
+</view>
+
+
+<view class="title">
+老师团队
+</view>
+<view class="flex-row" style="display: flex;" class="pad">
+<view bindtap="jiaoshi" wx="{{teacher1}}" >
+<image src="https://www.mqvt1.cn/{{teacher1.img}}"  class="profile1"></image>
+<view class="teach">{{teacher1.name}}</view>
+</view>
+<view bindtap="jiaoshi1" wx="{{teacher2}}" >
+<image src="https://www.mqvt1.cn/{{teacher2.img}}"  class="profile1"></image>
+<view class="teach">{{teacher2.name}}</view>
+</view>
+<view bindtap="jiaoshi2" wx="{{teacher3}}" >
+<image src="https://www.mqvt1.cn/{{teacher3.img}}"  class="profile1"></image>
+<view class="teach">{{teacher3.name}}</view>
+</view>
+<view bindtap="jiaoshi3" wx="{{teacher4}}">
+<image src="https://www.mqvt1.cn/{{teacher4.img}}"  class="profile1"></image>
+<view class="teach">{{teacher4.name}}</view>
+</view>
+<view bindtap="jiaoshi4" wx="{{teacher5}}">
+<image src="https://www.mqvt1.cn/{{teacher5.img}}"  class="profile1"></image>
+<view class="teach">{{teacher5.name}}</view>
+</view>
+</view>
+
+
+<view    class="{{jiaoshi?'show':'hidden'}} pad1" wx="{{teacher1}}">
+  <text>{{teacher1.content}}</text>
+</view>
+
+<view    class="{{jiaoshi1?'show':'hidden'}} pad1" wx="{{teacher2}}">
+  <text>{{teacher2.content}}</text>
+
+</view>
+
+<view    class="{{jiaoshi2?'show':'hidden'}} pad1" wx="{{teacher3}}">
+  <text>{{teacher3.content}}</text>
+</view>
+
+<view    class="{{jiaoshi3?'show':'hidden'}} pad1"wx="{{teacher4}}" >
+ <text>{{teacher4.content}}</text>
+</view>
+<view    class="{{jiaoshi4?'show':'hidden'}} pad1"wx="{{teacher5}}" >
+ <text>{{teacher5.content}}</text>
+</view>
+</view>
+</view>
+
+
+
+<view class="di">
+<button class="yq" open-type="share">邀请朋友一起参加练习</button>
+<view class="gray">——组队对抗惰性，每日瑜伽练习——</view>
+
+<navigator url="/pages/video/video2" hover-class="navigator-hover" class="ju"><view >查看更多体式</view></navigator>
+</view>
+</view>
+
